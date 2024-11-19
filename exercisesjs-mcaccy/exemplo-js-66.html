@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Segundo exemplo</title>
+    <style>
+            body {font: 12pt Arial }
+            button {font-size: 12pt; padding: 30px;}
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Números  versão 2.0</h1>
+    <button onclick="inicio()">Clique aqui para Começar</button>
+    
+
+    <h1 id="resultado">
+
+    </h1>
+
+    
+</body>  
+
+
+
+
+<script>
+
+    function inicio (){
+        let nome = window.prompt("Informe o nome do aluno:");  
+
+        let numero = Number(window.prompt("Qual a 1ª nota:")); 
+
+        let numero2 = Number(window.prompt("Qual a 2ª nota:")); 
+
+        let soma = (numero + numero2)       
+        
+        let media = (soma / 2) 
+
+       
+               
+        document.getElementById("resultado").innerHTML = `A média do ${nome} é: ${media}<br>`
+    }
+        
+       
+    </script>
+
+</html>

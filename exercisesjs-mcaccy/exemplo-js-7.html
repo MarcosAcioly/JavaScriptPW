@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leis de Newton</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      margin-top: 20px;
+      max-width: 600px;
+      text-align: center;
+    }
+    #output {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Simulação das Leis de Newton</h1>
+  <div class="container">
+    <h2>Primeira Lei de Newton (Inércia)</h2>
+    <button onclick="inercia()">Iniciar Simulação</button>
+    <div id="output1"></div>
+
+    <h2>Segunda Lei de Newton (F = ma)</h2>
+    <label for="massa">Massa (kg): </label>
+    <input type="number" id="massa" value="1" min="0">
+    <label for="aceleracao">Aceleração (m/s²): </label>
+    <input type="number" id="aceleracao" value="1" min="0">
+    <button onclick="calcularForca()">Calcular Força</button>
+    <div id="output2"></div>
+
+    <h2>Terceira Lei de Newton (Ação e Reação)</h2>
+    <button onclick="acaoReacao()">Ver Ação e Reação</button>
+    <div id="output3"></div>
+  </div>
+
+  <script>
+    // Função para Primeira Lei de Newton
+    function inercia() {
+      const mensagem = "Um objeto em repouso permanece em repouso, e um objeto em movimento continua em movimento até que uma força externa aja sobre ele.";
+      document.getElementById("output1").innerText = mensagem;
+    }
+
+    // Função para Segunda Lei de Newton
+    function calcularForca() {
+      const massa = parseFloat(document.getElementById("massa").value);
+      const aceleracao = parseFloat(document.getElementById("aceleracao").value);
+      const forca = massa * aceleracao; // F = ma
+      document.getElementById("output2").innerText = `A força necessária é de ${forca.toFixed(2)} N (Newtons).`;
+    }
+
+    // Função para Terceira Lei de Newton
+    function acaoReacao() {
+      const mensagem = "Para toda ação, há uma reação de igual intensidade e direção oposta.";
+      document.getElementById("output3").innerText = mensagem;
+    }
+  </script>
+
+</body>
+</html>

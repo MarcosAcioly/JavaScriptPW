@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .label {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  
+  .input {
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 16px;
+    width: 50%;
+    max-width: 300px;
+  }
+  
+  .botao {
+    width: 5cm;
+    height: 3cm;
+    border-radius: 70px;
+    background-color: #87CEEB;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .botao:hover {
+    background-color: #6aaed0;
+  }
+  
+  .mensagem {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+  }
+  
