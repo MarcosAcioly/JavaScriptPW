@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação com o Sistema</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            font-style: italic;
+            font-weight: bold;
+        }
+        button {
+            background: linear-gradient(45deg, blue, yellow, green);
+            border: 2.5px solid #000;
+            border-radius: 45px;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            color: red;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        #response {
+            margin-top: 50px;
+            font-size: 16px;
+        }
+    </style>
+    <script>
+        function handleClick() {
+            const now = new Date().toString();
+            document.getElementById('response').textContent = 
+                "O que eu recebi do sistema foi " + now;
+        }
+    </script>
+</head>
+<body>
+    <h1>INTERAGINDO COM O SISTEMA</h1>
+    <button onclick="handleClick()">Clique em mim</button>
+    <div id="response"></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-style: italic;
+    font-weight: bold;
+}
+
+button {
+    background: linear-gradient(45deg, blue, yellow, green);
+    border: 2.5px solid black;
+    border-radius: 45px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: red;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+#response {
+    font-size: 16px;
+}
